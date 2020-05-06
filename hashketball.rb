@@ -190,7 +190,7 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  max = {shoe: 0}
+  max = players.values[0]
   players.values.each do |player_hash|
     new_shoe = player_hash[:shoe]
     if new_shoe > max[:shoe]
